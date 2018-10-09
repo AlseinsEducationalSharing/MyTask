@@ -25,7 +25,7 @@ namespace MyTask
         public void SetException(Exception exception)
         {
             _exception = exception;
-            _completed = false;
+            _completed = true;
             _continuation?.Invoke();
         }
 
